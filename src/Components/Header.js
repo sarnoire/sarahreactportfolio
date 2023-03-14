@@ -1,7 +1,7 @@
 function Header(props) {
   return (
     <header>
-        <h1>MY project</h1>
+        <h1>Sarah DeSantis</h1>
       <nav>
         {props.pages.map((page, i) => (
             <li 
