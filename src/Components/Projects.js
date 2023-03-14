@@ -1,10 +1,24 @@
 const portfolioProjects = [
     {
-        name: 'Weather App',
-        gitHub: "https://",
-        deployed: "https://",
-        image: "./Images/whatev.png",
-        description: "this is a short desc....."
+        name: 'Algorhythyms: Lyric Finder Site',
+        gitHub: "https://github.com/teamirteklu/Algorhythyms-Project",
+        deployed: "https://teamirteklu.github.io/Algorhythyms-Project/",
+        image: "./images/algorythym.png",
+        description: "Project 1."
+    },
+    {
+        name: 'The Suite Life: Travel App',
+        gitHub: "https://github.com/helenhosse/Travel-Passport",
+        deployed: "https://helenhosse.github.io/Travel-Passport/",
+        image: "./images/thesuitelife.png",
+        description: "Project 2."
+    },
+    {
+        name: 'Coming Soon',
+        gitHub: "",
+        deployed: "",
+        image: "./images/coming-soon.png",
+        description: "Future Project 3."
     },
 
 ]
@@ -12,7 +26,7 @@ const portfolioProjects = [
 
 function Projects () {
     return (
-        <div>
+        <div style={{ backgroundImage: './images/dark-black-stripes-black-and-white-590013114', color: 'white' }}>
             {
                 portfolioProjects.map((project, i) => (
                     <div key={`${project}_${i}`} style={{backgroundImage: url(project.image)}}>

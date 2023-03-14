@@ -22,6 +22,9 @@ function App() {
     {
       name: "about me"
     },
+    {
+      name: "resume"
+    },
   ])
 
   const [activePage, setActivePage] = useState(pages[0])
