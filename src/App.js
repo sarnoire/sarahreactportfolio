@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import { useState } from "react";
 import './App.css';
-import './Components/Header'
-import './Components/Main'
+import Header from './Components/Header'
+import Main from './Components/Main'
 
 function App() {
 
-  const [pages] = useState([
+  const [pages, setPages] = useState([
     {
       name: "home"
     },

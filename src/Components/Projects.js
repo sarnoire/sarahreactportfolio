@@ -1,3 +1,5 @@
+import React from 'react';
+
 const portfolioProjects = [
     {
         name: 'Algorhythyms: Lyric Finder Site',
@@ -29,9 +31,9 @@ function Projects () {
         <div style={{ backgroundImage: './images/dark-black-stripes-black-and-white-590013114', color: 'white' }}>
             {
                 portfolioProjects.map((project, i) => (
-                    <div key={`${project}_${i}`} style={{backgroundImage: url(project.image)}}>
+                    <div key={`${project}_${i}`} style={{backgroundImage: project.image}}>
                         <h2>{project.name}</h2>
-                        <img src={project.image} />
+                        <img src={project.image} alt="" />
                         <p>{project.description}</p>
                         <p>Visit the project here: <a href={project.deployed}>{project.name}</a></p>
                         <p>Check out my code here: <a href={project.gitHub}>Github</a></p>

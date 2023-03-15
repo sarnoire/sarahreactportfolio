@@ -4,12 +4,14 @@ const handleSubmit = (event) => {
     event.preventDefault();
 };
 
-const [formState, setFormState] = useState({
+const portfolioContact = [" "];
+
+const [formState, setFormState] = useState([{
     name: "",
     email: "",
     subject: "",
     message: "",
-});
+}]);
 
 const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -19,8 +21,8 @@ const handleInputChange = (event) => {
 function Contact() {
     return (
         <div>
-            {portfolioContact.map(contact, i) => (
-            <div key={`${Contact}_${i}`}>
+            {portfolioContact.map((contact, i) => (
+            <div key={`${contact}_${i}`}>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
@@ -65,11 +67,9 @@ function Contact() {
                 </form>
 
             </div>
-            ))
+            ))}
         </div>
-        })};
-
-    
+    )}
 
 export default Contact
 
