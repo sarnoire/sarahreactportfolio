@@ -6,17 +6,17 @@ import Resume from "./Resume"
 import Contact from "./Contact"
 
 function Main(props) {
-    if (props.page == null) {
+    if (props.page === null) {
         return null;
-    } else if (props.page.name == "home") {
+    } else if (props === "home") {
         return <Home />;
-    } else if (props.page.name == "aboutme") {
+    } else if (props === "aboutme") {
         return <AboutMe />;
-    } else if (props.page.name == "projects") {
+    } else if (props === "projects") {
         return <Projects />;
-    } else if (props.page.name == "resume") {
+    } else if (props === "resume") {
         return <Resume />;
-    } else if (props.page?.name == "contact") {
+    } else if (props === "contact") {
         return <Contact />
     } else {
         return null;

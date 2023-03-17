@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 
-const handleSubmit = (event) => {
-    event.preventDefault();
-};
 
-const portfolioContact = [" "];
 
-const [formState, setFormState] = useState([{
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-}]);
-
-const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormState({ ...formState, [name]: value });
-};
+// const portfolioContact = [" "];
 
 function Contact() {
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    };
+  
+    const [formState, setFormState] = useState({name: "", email: "", subject: "", message: "",});
+    
+    
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setFormState({ ...formState, [name]: value });
+    };
+    
     return (
         <div>
-            {portfolioContact.map((contact, i) => (
-            <div key={`${contact}_${i}`}>
+            {/* {portfolioContact.map((contact, i) => ( */}
+            <div>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
@@ -67,7 +66,7 @@ function Contact() {
                 </form>
 
             </div>
-            ))}
+            {/* ))} */}
         </div>
     )}
 

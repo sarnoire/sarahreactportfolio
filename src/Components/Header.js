@@ -1,16 +1,36 @@
 import React from 'react';
 
 function Header(props) {
+  const pages = [
+    {
+      name: "home"
+    },
+    {
+      name: "resume"
+    },
+    {
+      name: "projects"
+    },
+    {
+      name: "contact"
+    },
+    {
+      name: "about me"
+    },
+    {
+      name: "resume"
+    },
+  ]
   return (
     <header>
         <h1>Sarah DeSantis</h1>
       <nav>
-        {props.pages.map((page, i) => (
+        {pages.map((page, i) => (
             <li 
                 key={`${page.name}_${i}`}
-                onClick={() => props.setActivePage(page)}
+                
                 >
-                {page.name}
+                <a onClick={() => props.setActivePage(page.name)}>{page.name}</a>
             </li>
         ))}
       </nav>
