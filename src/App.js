@@ -5,14 +5,12 @@ import Header from './Components/Header'
 import Main from './Components/Main'
 import AboutMe from './Components/AboutMe';
 import Projects from './Components/Projects';
-
+import Contact from './Components/Contact';
+import Resume from './Components/Resume';
 
 function App() {
 
   // const [pages, setPages] = useState([
-  //   {
-  //     name: "home"
-  //   },
   //   {
   //     name: "resume"
   //   },
@@ -25,21 +23,22 @@ function App() {
   //   {
   //     name: "about me"
   //   },
-  //   {
-  //     name: "resume"
-  //   },
   // ])
 
-  const [activePage, setActivePage] = useState("")
+  const [activePage, setActivePage] = useState("Contact")
+  
   const displayPage = ()=> {
-    switch(setActivePage){
+    switch(activePage){
       case "About Me":
         return <AboutMe />
       case "Projects":
         return <Projects />
-      //TODO: Add case return for the rest of the classes
+      case "Contact":
+        return <Contact />
+      case "Resume":
+          return <Resume />        
         default:
-          return <Home />;
+          return <Main />;
   
     }
   }
@@ -47,12 +46,12 @@ function App() {
   return (
     <div className="App">
       <Header
-        pages={pages}
+        // pages={pages}
         activePage={activePage}
         setActivePage={setActivePage}
       />
     
-      <footer />
+      {displayPage()}
     </div>
   );
 }

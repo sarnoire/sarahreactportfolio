@@ -1,10 +1,11 @@
 import React from 'react';
+import selfie from '../images/image2.jpeg'
 
 function AboutMe() {
   return (
-    <div className="about-me" style={{backgroundImage:"./images/dark-black-stripes-black-and-white-590013114",color: "white",}}>
-      <h2>About Me</h2>
-      <img src="./images/image1.jpeg" alt="Selfie" />
+    <div className="about-me">
+      <h2>Hi, welcome to my portfolio! I'm Sarah.</h2>
+      <img src={selfie} alt="Selfie" />
       <p>I am...</p>
       <p>
         <ul>
