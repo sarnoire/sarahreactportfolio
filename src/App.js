@@ -7,6 +7,7 @@ import AboutMe from './Components/AboutMe';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
   //   },
   // ])
 
-  const [activePage, setActivePage] = useState("Contact")
+  const [activePage, setActivePage] = useState(" ")
   
   const displayPage = ()=> {
     switch(activePage){
@@ -52,6 +53,8 @@ function App() {
       />
     
       {displayPage()}
+      
+      <Footer /> {Footer}
     </div>
   );
 }
