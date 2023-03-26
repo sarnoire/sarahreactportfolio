@@ -1,4 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Raleway:wght@400;600;700&display=swap');
+
 .App {
+  background-image: url(../src/images/dark-black-stripes-black-and-white-590013114.jpg);
+  background-repeat: repeat;
+  
+}
+
+.header-container {
+  display: flex;
+  background: fixed;
+  height: 10vh;
+  color: lightgray;
+  background: black;
+}
+.header-title {
+  font-family: 'Charmonman', cursive;
+  font-weight:700;
+  color: darkgray;
+}
+
+.header-title span { 
+  color: maroon;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar li a {
+  color: darkgray;
+  font-size: 20px;
+  font-weight: 600;
+  float:right;
+  text-align: center;
+  padding: 10px;
+  line-height: 5px;
+  border: solid;
+  border-radius: 10px;
+  border-color: maroon;
+}
+
+.navbar a:hover {
+  background-color: maroon;
+  color: black;
+}
+
+.about-me {
+  font-family: Raleway, sans-serif;
+  font-size: large;
+  color: lightgray;
+  padding: 10px;
+
+}
+
+.row {
+  display: flex;
+}
+
+.selfie2 {
+  width: 375px;
+  height: 500px;
+  padding: 0px;
+  border-style: outset;
+  border-radius: 0%;
+  border-color: maroon;
+  border-width: 5px;
+}
+
+.projects {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: lightgray;
   text-align: center;
 }
 
+.footer {
+  background-color: black;
+  color: maroon;
+  text-align: center;
+  height: 10vh;
+}
+
+.footer li {
+  list-style: none;
+  display: inline-flex;
+  margin: auto;
+  font-size: large;
+  font-family: 'Raleway', sans-serif;
+  color: maroon;
+}

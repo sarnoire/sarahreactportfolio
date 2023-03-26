@@ -3,23 +3,24 @@ import React from "react";
 function Header(props) {
   const pages = [
     {
-      name: "Resume",
+      name: "About Me",
     },
-    {
+        {
       name: "Projects",
     },
     {
-      name: "Contact",
+      name: "Resume",
     },
     {
-      name: "About Me",
-    },
-    
+      name: "Contact",
+    }
   ];
   return (
-    <header>
-      <h1>Sarah DeSantis</h1>
-      <nav>
+    <header className="header-container">
+      <h1 className="header-title">Portfolio: <span>Sar Noire</span>
+            
+      </h1>
+      <nav className="navbar">
         {pages.map((page, i) => (
           <li key={`${page.name}_${i}`}>
             <a onClick={() => props.setActivePage(page.name)}>{page.name}</a>

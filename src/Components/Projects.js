@@ -20,10 +20,10 @@ const portfolioProjects = [
     },
     {
         name: 'Coming Soon',
-        gitHub: "",
-        deployed: "",
+        gitHub: "Coming Soon",
+        deployed: "Coming Soon",
         image: comingsoon,
-        description: "Future Project 3."
+        description: "Project 3."
     },
 
 ]
@@ -31,7 +31,7 @@ const portfolioProjects = [
 
 function Projects () {
     return (
-        <div>
+        <div className='projects'>
             {
                 portfolioProjects.map((project, i) => (
                     <div key={`${project}_${i}`}>
