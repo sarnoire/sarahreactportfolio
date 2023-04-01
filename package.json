@@ -1,7 +1,7 @@
 {
   "name": "potfolio2codingboogaloo",
   "version": "0.1.0",
-  "homepage": "https://sarnoire.github.io/potfolio2codingboogaloo/",
+  "homepage": "https://sarnoire.github.io/sarahreactportfolio/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
